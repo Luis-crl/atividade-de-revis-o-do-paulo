@@ -1,0 +1,34 @@
+algoritmo
+
+var
+ salariobruto: real
+ salarioliquido: real
+ desconto: real
+
+inicio
+ escreval("insira o valor")
+ leia(salariobruto)
+ se salariobruto <= 1621 entao
+     desconto <- salariobruto * 0.075
+     salarioliquido <- salariobruto - desconto
+     escreval("salariobruto é ", salariobruto)
+     escreval("salario descontado do inss ", salarioliquido)
+     escreval("desconto de inss: ", desconto)
+  senao
+     se salariobruto <= 2902 entao
+     desconto <- (salariobruto * 0.09)- 24.32
+     salarioliquido <- salariobruto - desconto
+     escreval("salariobruto é ", salariobruto)
+     escreval("salario descontado do inss ", salarioliquido)
+     escreval("desconto de inss: ", desconto)
+  senao
+     se salariobruto <= 4354 entao
+     desconto <- (salariobruto * 0.12)- 111.40
+     salarioliquido <- salariobruto - desconto
+     escreval("salariobruto é ", salariobruto)
+     escreval("salario descontado do inss ", salarioliquido)
+     escreval("desconto de inss: ", desconto)
+     fimse
+  fimse
+ fimse
+fimalgoritmo

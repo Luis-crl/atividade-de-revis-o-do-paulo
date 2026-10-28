@@ -1,0 +1,20 @@
+algoritmo
+
+var
+ tentativas: inteiro
+ palavrachave: caracter
+ chute: caracter
+
+inicio
+ tentativas <- 1
+ escreval("jogador 01 - insira sua palavra ")
+ leia(palavrachave)
+ escreval("jogador 02 - insira sua primeira tentativa")
+ leia(chute)
+ enquanto palavrachave <> chute faca
+    escreval("realize um chute")
+    tentativas <- tentativas + 1
+  fimenquanto
+  escreval("palavra chave era: ", palavrachave)
+  escreval("o jogador 02 acertou em ", tentativas "tentativas")
+fimalgoritmo
